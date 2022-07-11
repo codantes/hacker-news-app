@@ -54,6 +54,7 @@ const Search = () => {
             w={['85%', '85%', '55%', '57%']}
             m='auto'
             >
+                
             {
                 searchData.map((story)=> {
                     return(
