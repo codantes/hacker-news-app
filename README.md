@@ -13,3 +13,7 @@ This is because API used for the application is non-https
 
 ![news details page](https://i.imgur.com/IBcp6As.png)
 #### you can see news details here, which includes title, author, points and comments
+
+# How did I build this project 
+- I used Next.js to build the whole application 
+- For component library I used chakra UI
