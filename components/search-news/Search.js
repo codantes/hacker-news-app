@@ -10,7 +10,7 @@ const Search = () => {
 
     const handleSearch = async () => {
         if(query){
-            const url = 'http://hn.algolia.com/api/v1/search?query=' + query + '&tags=story';
+            const url = 'https://hn.algolia.com/api/v1/search?query=' + query + '&tags=story';
             const res = await fetch(url);
             const data = await res.json();
             setSearchData(data.hits)
