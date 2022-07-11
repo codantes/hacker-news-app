@@ -16,7 +16,6 @@ const Home = ({newsData}) => {
          <>
          <Head>
           <title>Hacker news</title>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
         </Head>
          <VStack
          bgColor='rgb(44, 54, 63)'
