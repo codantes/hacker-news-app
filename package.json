@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.3",
+    "@chakra-ui/react": "^2.2.1",
+    "html-parse-stringify": "^3.0.1",
+    "html-to-json": "^0.6.0",
     "next": "12.2.2",
+    "node-html-parser": "^5.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
