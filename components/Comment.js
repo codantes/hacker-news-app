@@ -14,6 +14,7 @@ const Comment = ({data}) => {
         rounded='md' 
         shadow='lg'
         bgColor='yellow.300'
+        borderLeft='3px solid orangered'
         >   
             <Box
             display='flex'

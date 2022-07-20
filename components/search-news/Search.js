@@ -5,15 +5,21 @@ import NewsCard from '../latest-news/NewsCard';
 const Search = () => {
     const [query, setQuery] = useState('')
     const [searchData, setSearchData] = useState([])
+    const [loading, setLoading] = useState(false)
     console.log(query)
     console.log(searchData)
 
     const handleSearch = async () => {
         if(query){
+            if(searchData == []){
+                setLoading(true)
+            }
             const url = 'https://hn.algolia.com/api/v1/search?query=' + query + '&tags=story';
             const res = await fetch(url);
             const data = await res.json();
+            setLoading(false)
             setSearchData(data.hits)
+            
         }
     }
 
@@ -50,11 +56,19 @@ const Search = () => {
                         <Search2Icon/>
                     </Button>
             </FormControl>
+            {
+                loading &&
+                <Text
+                variant='regularHeading'
+                >
+                    Loading...
+                </Text>
+            }
             <Box
             w={['85%', '85%', '55%', '57%']}
             m='auto'
             >
-                
+            
             {
                 searchData.map((story)=> {
                     return(

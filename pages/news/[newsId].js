@@ -18,6 +18,7 @@ const NewsDetails = ({storyData}) => {
         bgColor='rgb(44, 54, 63)'
         p='2rem'
         textAlign='left'
+        minHeight='100vh'
         >
             <Text
             variant='regularHeading'
